@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: send-message
+
+  thymeleaf:
+    cache: false
+  datasource:
+    generate-unique-name: false
+    name: send-message

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Сообщения</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+<a th:href="@{/send-message}">Отправить сообщение</a>
+<h1 th:align="center">Список сообщений</h1>
+    <table border="1" style="width:100%">
+        <thead>
+            <th>Автор</th><th>Время</th><th>Текст</th>
+        </thead>
+        <tbody>
+        <tr th:each="msg : ${messages}">
+            <td th:text="${msg.author}"></td><td th:text="${msg.date}"></td><td th:text="${msg.text}"></td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

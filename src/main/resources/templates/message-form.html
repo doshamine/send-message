@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Отправка сообщения</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+<a th:href="@{/show-messages}">Посмотреть сообщения</a>
+<div th:align="center">
+    <h1>Сообщение</h1>
+    <form method="POST">
+        <p>Текст сообщения: <input type="text" th:field="${message.text}" /></p>
+        <p>Получатель: <input type="text" th:field="${receive_addr}" /></p>
+        <input type="submit" value="Отправить" /> <input type="reset" value="Очистить" />
+    </form>
+</div>
+</body>
+</html>

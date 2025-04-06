@@ -1,0 +1,14 @@
+body {
+    color: black;
+    background-color: lightskyblue;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+table {
+    width: 90%;
+}
+
+thead {
+    background-color: darkgrey;
+}
